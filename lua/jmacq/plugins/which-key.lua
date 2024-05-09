@@ -11,6 +11,11 @@ return {
     require("which-key").register({
       ["<leader>t"] = { name = "[T]ab", _ = "which_key_ignore" },
       ["<leader>f"] = { name = "[F]ind", _ = "which_key_ignore" },
+      ["<leader>s"] = { name = "[S]plit", _ = "which_key_ignore" },
+      ["<leader>n"] = { name = "[N]o", _ = "which_key_ignore" },
+      ["<leader>e"] = { name = "File [e]xplorer", _ = "which_key_ignore" },
+      ["<leader>x"] = { name = "E[x]plore trouble issue", _ = "which_key_ignore" },
+      ["<leader>m"] = { name = "For[m]at", _ = "which_key_ignore" },
     })
   end,
   opts = {
