@@ -16,6 +16,11 @@ return {
       ["<leader>e"] = { name = "File [e]xplorer", _ = "which_key_ignore" },
       ["<leader>x"] = { name = "E[x]plore trouble issue", _ = "which_key_ignore" },
       ["<leader>m"] = { name = "For[m]at", _ = "which_key_ignore" },
+      ["<leader>h"] = { name = "Git [h]unk", _ = "which_key_ignore" },
+      ["<leader>c"] = { name = "[C]ode actions", _ = "which_key_ignore" },
+      ["<leader>l"] = { name = "[L]azy git", _ = "which_key_ignore" },
+      ["<leader>r"] = { name = "Smart [r]ename", _ = "which_key_ignore" },
+      ["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
     })
   end,
   opts = {
