@@ -17,9 +17,15 @@ keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- 
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open [n]ew tab" }) -- open new tab
-keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "[C]lose current tab" }) -- close current tab
+keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to [n]ext tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to [p]revious tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current bu[f]fer in new tab" }) --  move current buffer to new tab
 keymap.set("n", "<S-l>", "<cmd>tabn<CR>", { desc = "Go to [n]ext tab" }) --  go to next tab
 keymap.set("n", "<S-h>", "<cmd>tabp<CR>", { desc = "Go to [p]revious tab" }) --  go to previous tab
+
+-- navigation
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
