@@ -29,3 +29,6 @@ keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
+
+-- paste without overwriting clipboard
+keymap.set("x", "<leader>p", '"_dP')
