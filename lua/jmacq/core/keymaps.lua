@@ -38,3 +38,10 @@ keymap.set("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
 keymap.set("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
 keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
 keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
+
+-- " open file in a text by placing text and gf
+keymap.set("n", "gf", ":vert winc f<cr>")
+-- " copies filepath to clipboard by pressing yf
+keymap.set("n", "yf", ":let @+=expand('%:p')<CR>", { silent = true })
+-- " copies pwd to clipboard: command yd
+keymap.set("n", "yd", ":let @+=expand('%:p:h')<CR>", { silent = true })
