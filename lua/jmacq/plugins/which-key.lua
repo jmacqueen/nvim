@@ -8,19 +8,19 @@ return {
   config = function()
     require("which-key").setup()
 
-    require("which-key").register({
-      ["<leader>t"] = { name = "[T]ab", _ = "which_key_ignore" },
-      ["<leader>f"] = { name = "[F]ind", _ = "which_key_ignore" },
-      ["<leader>s"] = { name = "[S]plit", _ = "which_key_ignore" },
-      ["<leader>n"] = { name = "[N]o", _ = "which_key_ignore" },
-      ["<leader>e"] = { name = "File [e]xplorer", _ = "which_key_ignore" },
-      ["<leader>x"] = { name = "E[x]plore trouble issue", _ = "which_key_ignore" },
-      ["<leader>m"] = { name = "For[m]at", _ = "which_key_ignore" },
-      ["<leader>h"] = { name = "Git [h]unk", _ = "which_key_ignore" },
-      ["<leader>c"] = { name = "[C]ode actions", _ = "which_key_ignore" },
-      ["<leader>l"] = { name = "[L]azy git", _ = "which_key_ignore" },
-      ["<leader>r"] = { name = "Smart [r]ename", _ = "which_key_ignore" },
-      ["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
+    require("which-key").add({
+      { "<leader>t", group = "[T]ab" },
+      { "<leader>f", group = "[F]ind" },
+      { "<leader>s", group = "[S]plit" },
+      { "<leader>n", group = "[N]o" },
+      { "<leader>e", group = "File [e]xplorer" },
+      { "<leader>x", group = "E[x]plore trouble issue" },
+      { "<leader>m", group = "For[m]at" },
+      { "<leader>h", group = "Git [h]unk" },
+      { "<leader>c", group = "[C]ode actions" },
+      { "<leader>l", group = "[L]azy git" },
+      { "<leader>r", group = "Smart [r]ename" },
+      { "<leader>w", group = "[W]orkspace" },
     })
   end,
   opts = {
