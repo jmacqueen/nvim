@@ -39,3 +39,8 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+opt.showtabline = 1 -- show tabline when more than one tab is open
+
+-- set colorscheme
+vim.cmd("colorscheme retrobox")
