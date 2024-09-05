@@ -7,5 +7,8 @@ return {
   },
   opts = {
     -- Your setup opts here
+    outline_window = {
+      focus_on_open = false,
+    },
   },
 }
