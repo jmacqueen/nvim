@@ -42,5 +42,13 @@ opt.swapfile = false
 
 opt.showtabline = 1 -- show tabline when more than one tab is open
 
+-- use treesitter for auto folding
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevel = 99
+
+-- clear fold text
+opt.foldtext = ""
+
 -- set colorscheme
 vim.cmd("colorscheme retrobox")
