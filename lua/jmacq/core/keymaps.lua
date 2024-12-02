@@ -42,7 +42,7 @@ keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 
 -- " open file in a text by placing text and gf
 keymap.set("n", "gf", ":vert winc f<cr>")
--- " copies filepath to clipboard by pressing yf
+-- " copies filepath to clipboard by pressing yp
 keymap.set("n", "yp", ":let @+=expand('%:p')<CR>", { silent = true })
 -- " copies pwd to clipboard: command yd
 keymap.set("n", "yd", ":let @+=expand('%:p:h')<CR>", { silent = true })

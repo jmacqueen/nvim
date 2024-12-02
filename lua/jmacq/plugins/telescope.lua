@@ -9,6 +9,7 @@ return {
   },
   config = function()
     local telescope = require("telescope")
+    local builtin = require("telescope.builtin")
     local actions = require("telescope.actions")
     local transform_mod = require("telescope.actions.mt").transform_mod
 
@@ -47,11 +48,12 @@ return {
       "<cmd>Telescope current_buffer_fuzzy_find<cr>",
       { desc = "Interactive [/] in current buffer" }
     )
+    keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "Find Symbols" })
     keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Find in [h]elp" })
     keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find [f]iles in cwd" })
     keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find [r]ecent files" })
-    keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Live grep for [s]tring in cwd" })
-    keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under [c]ursor in cwd" })
+    keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live [g]rep for string in cwd" })
+    keymap.set("n", "<leader>fw", "<cmd>Telescope grep_string<cr>", { desc = "Find [w]ord under cursor in cwd" })
     keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find [t]odos" })
     keymap.set("n", "<leader><leader>", "<cmd>Telescope buffers<cr>", { desc = "[ ] Find existing buffers" })
   end,
