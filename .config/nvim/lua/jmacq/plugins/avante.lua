@@ -4,7 +4,12 @@ return {
   lazy = true,
   version = false, -- set this if you want to always pull the latest change
   opts = {
+    auto_suggestions_provider = "copilot",
     provider = "copilot",
+    -- provider = "openai",
+    -- openai = {
+    --   api_key = vim.fn.getenv("OPENAI_API_KEY"),
+    -- },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
