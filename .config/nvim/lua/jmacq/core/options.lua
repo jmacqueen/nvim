@@ -50,5 +50,8 @@ opt.foldlevel = 99
 -- clear fold text
 opt.foldtext = ""
 
+-- requested by Avante config
+vim.opt.laststatus = 3
+
 -- set colorscheme
 vim.cmd("colorscheme retrobox")
