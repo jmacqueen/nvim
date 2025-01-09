@@ -54,4 +54,4 @@ opt.foldtext = ""
 vim.opt.laststatus = 3
 
 -- set colorscheme
-vim.cmd("colorscheme retrobox")
+-- vim.cmd("colorscheme tokyonight-night")
