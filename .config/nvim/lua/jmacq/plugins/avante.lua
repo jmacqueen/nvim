@@ -4,7 +4,7 @@ return {
   lazy = true,
   version = false, -- set this if you want to always pull the latest change
   opts = {
-    auto_suggestions_provider = "copilot",
+    -- auto_suggestions_provider = "copilot",
     provider = "copilot",
     -- provider = "openai",
     -- openai = {
