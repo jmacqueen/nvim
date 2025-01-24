@@ -8,7 +8,13 @@ return {
       require("mini.operators").setup()
       require("mini.surround").setup()
       require("mini.cursorword").setup()
-      require("mini.indentscope").setup()
+      local indentscope = require("mini.indentscope")
+      indentscope.setup({
+        draw = {
+          animation = indentscope.gen_animation.none(),
+        },
+        symbol = "┊",
+      })
 
       local hipatterns = require("mini.hipatterns")
       hipatterns.setup({
