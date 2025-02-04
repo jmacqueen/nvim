@@ -8,7 +8,12 @@ return {
   opts = {
     -- suggestion = { enabled = false },
     panel = {
-      position = "right",
+      layout = {
+        position = "right",
+      },
+    },
+    suggestion = {
+      auto_trigger = "true",
     },
   },
 }
