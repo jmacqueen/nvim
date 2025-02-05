@@ -6,6 +6,7 @@ return {
     bigfile = { enabled = true },
     indent = { enabled = true, animate = { enabled = false } },
     notifier = { enabled = true },
+    quickfile = { enabled = true },
   },
   keys = {
     { "<leader>bd", function() Snacks.bufdelete() end, desc = "Delete Buffer", },
