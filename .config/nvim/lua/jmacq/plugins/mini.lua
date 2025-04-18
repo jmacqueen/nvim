@@ -6,7 +6,11 @@ return {
     config = function()
       require("mini.ai").setup()
       require("mini.operators").setup()
+
+      -- Remove default mapping for "s"
+      vim.keymap.set({ "n", "x" }, "s", "<Nop>")
       require("mini.surround").setup()
+
       require("mini.cursorword").setup()
       require("mini.icons").setup()
       -- require("mini.hues").setup({ background = "#19213a", foreground = "#c4c6cd" })
