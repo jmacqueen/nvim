@@ -44,7 +44,7 @@ opt.showtabline = 1 -- show tabline when more than one tab is open
 
 -- use treesitter for auto folding
 opt.foldmethod = "expr"
-opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 opt.foldlevel = 99
 
 -- clear fold text

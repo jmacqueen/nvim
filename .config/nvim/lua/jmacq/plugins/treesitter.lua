@@ -29,7 +29,7 @@ return {
         "yaml",
         "html",
         "css",
-        "prisma",
+        "scss",
         "markdown",
         "markdown_inline",
         "svelte",
@@ -41,7 +41,6 @@ return {
         "gitignore",
         "query",
         "vimdoc",
-        "c",
       },
       incremental_selection = {
         enable = true,
