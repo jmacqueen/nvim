@@ -7,6 +7,7 @@ return {
     indent = { enabled = true, animate = { enabled = false } },
     notifier = { enabled = true },
     quickfile = { enabled = true },
+    explorer = { hidden = true },
   },
   keys = {
     -- Top pickers
@@ -19,7 +20,7 @@ return {
     { "<leader>fb", function() Snacks.picker.buffers({ sort_lastused = false }) end, desc = "[B]uffers", },
     { "<leader>fc", function() Snacks.picker.colorschemes() end, desc = "[C]olorschemes", },
     { "<leader>fe", function() Snacks.picker.explorer() end, desc = "File [e]xplorer", },
-    { "<leader>ff", function() Snacks.picker.files() end, desc = "Find [f]iles", },
+    { "<leader>ff", function() Snacks.picker.files({ hidden = true }) end, desc = "Find [f]iles", },
     { "<leader>fg", function() Snacks.picker.grep() end, desc = "Live [g]rep for string in cwd", },
     { "<leader>fh", function() Snacks.picker.help() end, desc = "[H]elp pages", },
     { "<leader>fk", function() Snacks.picker.keymaps() end, desc = "[K]eymaps", },
