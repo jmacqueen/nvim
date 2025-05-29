@@ -6,6 +6,15 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
+    "banjo/contextfiles.nvim",
+  },
+  extensions = {
+    contextfiles = {
+      opts = {
+        -- your contextfiles configuration here
+        -- or leave it empty to use the default configuration
+      },
+    },
   },
   init = function()
     -- Expand 'cc' into 'CodeCompanion' in the command line
