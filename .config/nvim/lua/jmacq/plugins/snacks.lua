@@ -31,7 +31,7 @@ return {
     -- LSP
     { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto [d]efinition", },
     { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto [D]eclaration", },
-    { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "[R]eferences", },
+    { "gR", function() Snacks.picker.lsp_references() end, nowait = true, desc = "[R]eferences", },
     { "gI", function() Snacks.picker.lsp_implementations() end, desc = "Goto [I]mplementation", },
     { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition", },
 
