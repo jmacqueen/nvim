@@ -1,30 +1,30 @@
 return {
-  "olimorris/codecompanion.nvim",
-  event = "VeryLazy",
-  lazy = true,
-  opts = {},
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-treesitter/nvim-treesitter",
-    "banjo/contextfiles.nvim",
-  },
-  extensions = {
-    contextfiles = {
-      opts = {
-        -- your contextfiles configuration here
-        -- or leave it empty to use the default configuration
-      },
-    },
-  },
-  init = function()
-    -- Expand 'cc' into 'CodeCompanion' in the command line
-    vim.cmd([[cab cc CodeCompanion]])
-    vim.cmd([[cab ccc CodeCompanionCmd]])
-  end,
-  keys = {
-    { "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Toggle CodeCompanion chat" },
-    { "<leader>ai", "<cmd>CodeCompanion<cr>", desc = "CodeCompanion [i]nline assistant", mode = "n" },
-    { "<leader>ai", ":'<,'>CodeCompanion<cr>", desc = "CodeCompanion [i]nline assistant (visual)", mode = "v" },
-    { "<leader>am", "<cmd>CodeCompanionActions<cr>", desc = "CodeCompanion [m]enu" },
-  },
+  -- "olimorris/codecompanion.nvim",
+  -- event = "VeryLazy",
+  -- lazy = true,
+  -- opts = {},
+  -- dependencies = {
+  --   "nvim-lua/plenary.nvim",
+  --   "nvim-treesitter/nvim-treesitter",
+  --   "banjo/contextfiles.nvim",
+  -- },
+  -- extensions = {
+  --   contextfiles = {
+  --     opts = {
+  --       -- your contextfiles configuration here
+  --       -- or leave it empty to use the default configuration
+  --     },
+  --   },
+  -- },
+  -- init = function()
+  --   -- Expand 'cc' into 'CodeCompanion' in the command line
+  --   vim.cmd([[cab cc CodeCompanion]])
+  --   vim.cmd([[cab ccc CodeCompanionCmd]])
+  -- end,
+  -- keys = {
+  --   { "<leader>Aa", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Toggle CodeCompanion chat" },
+  --   { "<leader>Ai", "<cmd>CodeCompanion<cr>", desc = "CodeCompanion [i]nline assistant", mode = "n" },
+  --   { "<leader>Ai", ":'<,'>CodeCompanion<cr>", desc = "CodeCompanion [i]nline assistant (visual)", mode = "v" },
+  --   { "<leader>Am", "<cmd>CodeCompanionActions<cr>", desc = "CodeCompanion [m]enu" },
+  -- },
 }
