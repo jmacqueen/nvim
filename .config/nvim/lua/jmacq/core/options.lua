@@ -53,5 +53,13 @@ opt.foldtext = ""
 -- requested by Avante config
 vim.opt.laststatus = 3
 
+-- Add mdx and mdc file extensions to markdown filetype
+vim.filetype.add({
+  extension = {
+    mdx = "markdown",
+    mdc = "markdown",
+  },
+})
+
 -- set colorscheme
 -- vim.cmd("colorscheme kanso")
