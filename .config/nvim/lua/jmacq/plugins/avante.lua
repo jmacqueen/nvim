@@ -32,10 +32,10 @@ return {
     input = {
       provider = "snacks",
     },
-    web_search_engine = {
-      provider = "kagi", -- tavily, serpapi, searchapi, google, kagi, brave, or searxng
-      proxy = nil, -- proxy support, e.g., http://127.0.0.1:7890
-    },
+    -- web_search_engine = {
+    --   provider = "kagi", -- tavily, serpapi, searchapi, google, kagi, brave, or searxng
+    --   proxy = nil, -- proxy support, e.g., http://127.0.0.1:7890
+    -- },
     -- system_prompt as function ensures LLM always has latest MCP server state
     -- This is evaluated for every message, even in existing chats
     system_prompt = function()
@@ -49,18 +49,18 @@ return {
       }
     end,
     -- Disable tools provided by MCP Hub
-    disabled_tools = {
-      "list_files", -- Built-in file operations
-      "search_files",
-      "read_file",
-      "create_file",
-      "rename_file",
-      "delete_file",
-      "create_dir",
-      "rename_dir",
-      "delete_dir",
-      "bash", -- Built-in terminal access
-    },
+    -- disabled_tools = {
+    --   "list_files", -- Built-in file operations
+    --   "search_files",
+    --   "read_file",
+    --   "create_file",
+    --   "rename_file",
+    --   "delete_file",
+    --   "create_dir",
+    --   "rename_dir",
+    --   "delete_dir",
+    --   "bash", -- Built-in terminal access
+    -- },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
