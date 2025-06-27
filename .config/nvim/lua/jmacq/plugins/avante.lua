@@ -20,7 +20,7 @@ return {
     -- },
     mappings = {
       confirm = {
-        focus_window = "<C-Enter>",
+        focus_window = "<C-c>f",
         code = "c",
         resp = "r",
         input = "i",

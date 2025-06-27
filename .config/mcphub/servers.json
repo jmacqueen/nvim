@@ -1,17 +1,34 @@
 {
   "nativeMCPServers": {
     "neovim": {
+      "disabled": true,
       "autoApprove": [
         "replace_in_file",
         "read_file",
         "find_files",
         "list_directory"
-      ],
-      "disabled": true
+      ]
     }
   },
   "mcpServers": {
+    "context7": {
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "sequentialthinking": {
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/sequentialthinking"
+      ],
+      "command": "docker",
+      "disabled": true
+    },
     "playwright": {
+      "args": [
+        "-y",
+        "@executeautomation/playwright-mcp-server"
+      ],
       "autoApprove": [
         "start_codegen_session",
         "end_codegen_session",
@@ -46,23 +63,7 @@
         "playwright_click_and_switch_tab"
       ],
       "disabled": false,
-      "args": [
-        "-y",
-        "@executeautomation/playwright-mcp-server"
-      ],
       "command": "npx"
-    },
-    "context7": {
-      "url": "https://mcp.context7.com/mcp"
-    },
-    "sequentialthinking": {
-      "args": [
-        "run",
-        "--rm",
-        "-i",
-        "mcp/sequentialthinking"
-      ],
-      "command": "docker"
     }
   }
 }
